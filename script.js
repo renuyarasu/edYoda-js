@@ -2,15 +2,9 @@
 
 console.clear();
 
-// In-Built Number Functions
+// Strings
 
-let float_num = 87.0123546;
-console.log(typeof (float_num));
+let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae.'
 
-let result = float_num.toFixed();
-console.log(typeof (result)); // string
-console.log(result); // 87
-
-console.log(result(2));
-console.log(result(5));
-console.log(result(10));
+let result = myString.length
+console.log(result);
