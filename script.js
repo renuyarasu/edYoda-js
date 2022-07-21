@@ -4,7 +4,7 @@ console.clear();
 
 // Strings
 
-let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae.'
+let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae, lorem.'
 
-let result = myString.indexOf('Fuga')
-console.log(result);
+let result = myString.lastIndexOf('ipsum')
+console.log(result); // 158
