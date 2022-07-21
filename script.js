@@ -6,5 +6,5 @@ console.clear();
 
 let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae, lorem.'
 
-let result = myString.lastIndexOf('ipsum')
-console.log(result); // 158
+let result = myString.slice(0, 5)
+console.log(result); // Lorem
