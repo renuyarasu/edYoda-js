@@ -4,11 +4,11 @@ console.clear();
 
 // In-Built Number Functions
 
-let num_01 = 10; // Integer Number
-let num_02 = 10.00041; // Decemal Number
+let num_01 = '10';
+let num_02 = '11.00041';
 console.log(typeof (num_01));
 console.log(typeof (num_02));
 
-let result = num_01.toString();
-console.log(typeof (result)); // string
-console.log(result);
+let result = parseInt(num_02);
+console.log(typeof (result)); // number
+console.log(result); // 11
