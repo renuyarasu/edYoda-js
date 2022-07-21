@@ -6,5 +6,5 @@ console.clear();
 
 let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae, lorem.'
 
-let result = myString.toLowerCase()
+let result = myString.charAt(50)
 console.log(result); 
