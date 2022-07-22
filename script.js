@@ -12,4 +12,8 @@ let num_03 = 10;
 // console.log(num_01 + num_02); //45
 
 // Subtraction
-console.log(num_01 - num_02); /5
+// console.log(num_01 - num_02); //5
+
+// Multiplication
+
+console.log(num_01 * num_02); // 500
