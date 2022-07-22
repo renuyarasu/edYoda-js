@@ -15,5 +15,7 @@ let num_03 = 10;
 // console.log(num_01 - num_02); //5
 
 // Multiplication
+// console.log(num_01 * num_02); // 500
 
-console.log(num_01 * num_02); // 500
+// Division
+console.log(num_01 / num_02); // 1.25
