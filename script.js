@@ -2,9 +2,12 @@
 
 console.clear();
 
-// Strings
+// Arithmetic Operators
 
-let myString = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum incidunt voluptatem odio. Sit blanditiis voluptatum quasi provident? Accusantium, vitae, lorem.'
+let num_01 = 25;
+let num_02 = 20;
+let num_03 = 10;
 
-let result = myString.split(' ')
-console.log(result); 
+// Addition
+console.log(num_01 + num_02); //45
+
