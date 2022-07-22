@@ -23,7 +23,7 @@ let num_03 = 10;
 // Modules
 // console.log(num_01 % num_02); // 5
 
-// Increment
-console.log(num_01++); // 25
-console.log(num_01++); // 26
-console.log(num_01++); // 27
+// Decrement
+console.log(num_01--); // 25
+console.log(num_01--); // 24
+console.log(--num_01); // 22
