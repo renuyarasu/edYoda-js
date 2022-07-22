@@ -2,28 +2,11 @@
 
 console.clear();
 
-// Arithmetic Operators
+//  Implicit Type Coercion
 
-let num_01 = 25;
-let num_02 = 20;
-let num_03 = 10;
+let str = 'Hello';
+let num = 10;
+let result = str + num;
+console.log(result);
 
-// Addition
-// console.log(num_01 + num_02); //45
 
-// Subtraction
-// console.log(num_01 - num_02); //5
-
-// Multiplication
-// console.log(num_01 * num_02); // 500
-
-// Division
-// console.log(num_01 / num_02); // 1.25
-
-// Modules
-// console.log(num_01 % num_02); // 5
-
-// Decrement
-console.log(num_01--); // 25
-console.log(num_01--); // 24
-console.log(--num_01); // 22
