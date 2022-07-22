@@ -3,5 +3,10 @@
 console.clear();
 
 // DOM
-let result = document.getElementById('topbar');
-console.log(result);
+let count = document.getElementById('count');
+let initialCount = count.innerHTML;
+
+setInterval(function () {
+    initialCount = initialCount > 0 ? initialCount - 1 : 0;
+    count.innerHTML = initialCount;
+}, 1000)

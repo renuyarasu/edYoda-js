@@ -361,3 +361,6 @@ template {
 [hidden] {
   display: none;
 }
+
+body#bg{background: crimson;}
+body#bg div h1#count { font-size: 200px; font-weight: 700;}
