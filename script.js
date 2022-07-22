@@ -18,4 +18,8 @@ let num_03 = 10;
 // console.log(num_01 * num_02); // 500
 
 // Division
-console.log(num_01 / num_02); // 1.25
+// console.log(num_01 / num_02); // 1.25
+
+// Modules
+console.log(num_01 % num_02); // 5
+
