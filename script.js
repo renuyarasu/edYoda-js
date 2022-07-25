@@ -3,16 +3,11 @@
 console.clear();
 
 // DOM
-let click = document.getElementById('click_me');
-let bg = document.getElementById('bg');
+let head = document.getElementById('heading');
+let btn = document.getElementById('click_me');
 
-function onClick() {
-    alert('Hi')
-};
-
-// click.onclick = onClick;
-click.addEventListener('click', function () {
+btn.addEventListener('click', function () {
     setTimeout(() => {
-        bg.style.backgroundColor = 'crimson';
+        head.classList.add('big');
     }, 1000);
 })

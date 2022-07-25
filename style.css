@@ -361,4 +361,5 @@ template {
 [hidden] {
   display: none;
 }
-header button{margin-top: 200px; font-size: 50px; font-weight: 700; cursor: pointer;}
+header button{margin-top: 0px; font-size: 50px; font-weight: 700; cursor: pointer;}
+.big{font-size: 100px;}
