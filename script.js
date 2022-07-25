@@ -4,10 +4,17 @@ console.clear();
 
 // DOM
 let head = document.getElementById('heading');
-let btn = document.getElementById('click_me');
+let decrease = document.getElementById('btn-decrease');
+let increase = document.getElementById('btn-increase');
+let initialFontSize = window.getComputedStyle(head).fontSize;
+initialFontSize = parseInt(initialFontSize.substring(0, (initialFontSize.length - 2)));
 
-btn.addEventListener('click', function () {
-    setTimeout(() => {
-        head.classList.add('big');
-    }, 1000);
+increase.onclick = function () {
+    initialFontSize += 10;
+    head.style.fontSize = initialFontSize + 'px';
+}
+
+decrease.addEventListener('click', function () {
+    initialFontSize -= 10;
+    head.style.fontSize = initialFontSize + 'px';
 })
