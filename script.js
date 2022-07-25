@@ -9,4 +9,6 @@ let initialCount = count.innerHTML;
 setInterval(function () {
     initialCount = initialCount > 0 ? initialCount - 1 : 0;
     count.innerHTML = initialCount;
-}, 1000)
+    count.style.fontSize = initialCount * 10 + 'px';
+    console.log(initialCount * 10 + 'px');
+}, 1000);
