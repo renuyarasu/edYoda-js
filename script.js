@@ -3,12 +3,16 @@
 console.clear();
 
 // DOM
-let count = document.getElementById('count');
-let initialCount = count.innerHTML;
+let click = document.getElementById('click_me');
+let bg = document.getElementById('bg');
 
-setInterval(function () {
-    initialCount = initialCount > 0 ? initialCount - 1 : 0;
-    count.innerHTML = initialCount;
-    count.style.fontSize = initialCount * 10 + 'px';
-    console.log(initialCount * 10 + 'px');
-}, 1000);
+function onClick() {
+    alert('Hi')
+};
+
+// click.onclick = onClick;
+click.addEventListener('click', function () {
+    setTimeout(() => {
+        bg.style.backgroundColor = 'crimson';
+    }, 1000);
+})
