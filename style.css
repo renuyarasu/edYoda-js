@@ -168,7 +168,9 @@ img {
    * 1. Change the font styles in all browsers.
    * 2. Remove the margin in Firefox and Safari.
    */
-
+   form{
+    margin-top: 200px;
+   }
 button,
 input,
 optgroup,
@@ -361,5 +363,3 @@ template {
 [hidden] {
   display: none;
 }
-header button{margin: 20px; font-size: 30px; font-weight: 700; cursor: pointer;}
-.big{font-size: 100px;}

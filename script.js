@@ -2,19 +2,26 @@
 
 console.clear();
 
-// DOM
-let head = document.getElementById('heading');
-let decrease = document.getElementById('btn-decrease');
-let increase = document.getElementById('btn-increase');
-let initialFontSize = window.getComputedStyle(head).fontSize;
-initialFontSize = parseInt(initialFontSize.substring(0, (initialFontSize.length - 2)));
+// DOM - Form Events
 
-increase.onclick = function () {
-    initialFontSize += 10;
-    head.style.fontSize = initialFontSize + 'px';
-}
+let username = document.getElementById('username');
+let loginForm = document.getElementById('login-form');
 
-decrease.addEventListener('click', function () {
-    initialFontSize -= 10;
-    head.style.fontSize = initialFontSize + 'px';
+username.addEventListener('input', function (e) {
+    var current = e.target.value;
+    current = current.toUpperCase();
+    console.log(current);
+    username.value = current
+});
+
+username.addEventListener('focus', function () {
+    console.log('Element focused!!');
+})
+username.addEventListener('blur', function () {
+    console.log('Element blured!!');
+})
+
+loginForm.addEventListener('submit', function () {
+    alert('Submited');
+    e.preventDefault();
 })
