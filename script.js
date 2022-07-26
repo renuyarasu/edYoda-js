@@ -1,27 +1,17 @@
 // JavaScript - Basics to Advanced - EdYoda Digital University, Qaifi Khan
-
 console.clear();
 
-// DOM - Form Events
+// DOM - Create HTML Elements 
 
-let username = document.getElementById('username');
-let loginForm = document.getElementById('login-form');
+let list = document.getElementById('todo-list');
+let btnAdd = document.getElementById('add-item');
 
-username.addEventListener('input', function (e) {
-    var current = e.target.value;
-    current = current.toUpperCase();
-    console.log(current);
-    username.value = current
-});
+btnAdd.addEventListener('click', function () {
+    let newListElement = document.createElement('li');
+    let textNode = document.createTextNode('List Item ' + (list.childElementCount + 1));
+    newListElement.appendChild(textNode);
+    newListElement.id = 'item' + (list.childElementCount + 1);
 
-username.addEventListener('focus', function () {
-    console.log('Element focused!!');
-})
-username.addEventListener('blur', function () {
-    console.log('Element blured!!');
-})
-
-loginForm.addEventListener('submit', function () {
-    alert('Submited');
-    e.preventDefault();
+    list.appendChild(newListElement);
+    console.log(list.childElementCount);
 })
