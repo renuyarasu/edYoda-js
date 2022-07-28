@@ -1,14 +1,26 @@
 // JavaScript - Basics to Advanced - EdYoda Digital University, Qaifi Khan
 console.clear();
 
+// ES6 - Spread Operator
+/* 
+let num_01 = [1, 2, 3];
+let num_02 = [4, 5, 6];
+num_02.push(10);
+// let num = [...num_01, ...num_02]
 
-// ES6 - Rest Operator
+let num = num_01.concat(num_02);
 
-const sum = (num0, num2, ...args) => {
-    let sum = 0;
-    for (let i = 0; i < args.length; i++) {
-        sum += args[1]
-    }
-    console.log(sum);
+console.log(num); //[ 1, 2, 3, 4, 5, 6 ]
+
+ */
+
+
+let v_name = {
+    name: 'VedaGna',
 }
-sum(1, 2, 3, 4, 5); //12
+let v_age = {
+    age: 5
+}
+
+let boy = { ...v_name, ...v_age }
+console.log(boy); // { name: 'VedaGna', age: 5 }
