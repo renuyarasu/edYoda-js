@@ -1,26 +1,34 @@
 // JavaScript - Basics to Advanced - EdYoda Digital University, Qaifi Khan
 console.clear();
 
-// ES6 - Spread Operator
+// ES6 - Destructuring
 /* 
-let num_01 = [1, 2, 3];
-let num_02 = [4, 5, 6];
-num_02.push(10);
-// let num = [...num_01, ...num_02]
+with Array
+let fullname = 'Veda Bhadragava Sai';
+let nameArr = fullname.split(' ')
 
-let num = num_01.concat(num_02);
+console.log(nameArr);
+let firstname = nameArr[0];
+let middlename = nameArr[1];
+let lastname = nameArr[2]; 
 
-console.log(num); //[ 1, 2, 3, 4, 5, 6 ]
+let [firstname, middlename, lastname] = nameArr;
 
- */
+console.log(firstname);
+console.log(middlename);
+console.log(lastname);
 
-
-let v_name = {
-    name: 'VedaGna',
+*/
+// with Objects
+const person = {
+    firstname: 'VedaGna',
+    middlename: 'Bhadragava',
+    lastname: 'Sai',
+    age: 5,
 }
-let v_age = {
-    age: 5
-}
+let { firstname, middlename, lastname } = person;
 
-let boy = { ...v_name, ...v_age }
-console.log(boy); // { name: 'VedaGna', age: 5 }
+console.log(person.firstname);
+console.log(person.middlename);
+console.log(person.lastname);
+console.log(person.age);
